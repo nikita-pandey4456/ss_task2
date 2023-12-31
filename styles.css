@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.step {
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#step1 {
+    display: block;
+}
+
+#step2, #step3 {
+    display: none;
+}
+
+#displayOptions {
+    display: flex;
+    width: 150px;
+}
+
+#tableHeaders {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

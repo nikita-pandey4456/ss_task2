@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="step1" class="step">
+            <h2>Step 1: Import Data</h2>
+            <input type="file" accept=".json, .csv" id="fileInput" />
+            <button onclick="readFile()">Import</button>
+        </div>
+
+        <div id="step2" class="step">
+            <h2>Step 2: File Format</h2>
+            <label for="format">File Format:</label>
+            <select id="format">
+                <option value="json">JSON</option>
+                <option value="csv">CSV</option>
+            </select>
+
+            <label for="encoding">Character Encoding:</label>
+            <input type="text" id="encoding" value="UTF-8" />
+
+            <label for="delimiter">Delimiter:</label>
+            <input type="text" id="delimiter" value="," />
+
+            <label for="hasHeader">Has Header:</label>
+            <input type="checkbox" id="hasHeader" />
+
+            <button onclick="parseData()">Next</button>
+        </div>
+
+        <div id="step3" class="step">
+            <h2>Step 3: Display Data</h2>
+            <div>
+                <label for="displayOptions">Display Options:</label>
+                <select id="displayOptions" multiple></select>
+                <button onclick="addSelected()">Add > ></button>
+                <button onclick="removeSelected()">Remove < <</button>
+            </div>
+
+            <table id="productTable">
+                <thead>
+                    <tr id="tableHeaders"></tr>
+                </thead>
+                <tbody id="productBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
