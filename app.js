@@ -1,3 +1,4 @@
+
 let rawData = [];
 let displayedFields = [];
 
